@@ -53,7 +53,7 @@ lib/
     └── recipe_card.dart
 
 
-    📚 Objectifs pédagogiques (pour étudiants)
+📚 Objectifs pédagogiques (pour étudiants)
 
 Manipuler des listes et données complexes (recettes, ingrédients, étapes).
 
