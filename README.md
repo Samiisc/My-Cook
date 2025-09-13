@@ -1,74 +1,80 @@
-📖 Cahier des charges – Application de Recettes 🍲
-🎯 Objectifs du projet
+# 🍲 Application de Recettes – Flutter & Dart
 
-Développer une application mobile multiplateforme (Android & iOS) avec Flutter & Dart permettant aux utilisateurs de parcourir, consulter et sauvegarder leurs recettes préférées.
+## 📖 Description
+Cette application mobile multiplateforme (**Android & iOS**) permet aux utilisateurs de :
+- Parcourir une liste de recettes.
+- Consulter les détails d’une recette (ingrédients, étapes, temps de cuisson).
+- Sauvegarder leurs recettes préférées.
+- Rechercher et filtrer par nom, catégorie ou type de repas.
 
-Cette application servira de projet pédagogique pour apprendre à manipuler des données complexes, mettre en place une navigation avancée et gérer l’état dans Flutter.
+Ce projet est pensé comme **support pédagogique** pour apprendre Flutter & Dart :
+- Manipulation de données complexes.
+- Navigation multi-pages.
+- Gestion d’état.
+- UI responsive et moderne.
 
-🔑 Fonctionnalités principales
+---
 
-📋 Liste des recettes : affichage avec images, titres et courtes descriptions.
+## 🎯 Objectifs pédagogiques
+- Manipuler des **listes et modèles de données** (recettes, ingrédients, étapes).
+- Créer une **navigation avancée** avec onglets (Tabs), menu latéral (Drawer), et éventuellement une Bottom Navigation Bar.
+- Construire une **interface responsive** avec images, boutons et textes.
+- Implémenter une **gestion d’état** (Provider ou setState pour débuter).
+- Gérer des **assets** (images locales et en ligne).
 
-🍳 Détails d’une recette : ingrédients, étapes de préparation, temps de cuisson.
+---
 
-⭐ Sauvegarde des favoris : possibilité d’ajouter/enlever une recette des favoris.
+## 🔑 Fonctionnalités
+- 📋 **Liste des recettes** avec images, titres et courtes descriptions.  
+- 🍳 **Détails d’une recette** : ingrédients, préparation, temps de cuisson.  
+- ⭐ **Favoris** : ajouter ou retirer une recette.  
+- 🔍 **Recherche & filtres** (nom, catégorie, type de repas).  
+- 🧭 **Navigation intuitive** :
+  - Tabs (onglets).
+  - Drawer (menu latéral).
+  - Bottom navigation bar (optionnel).  
+- 📱 **UI responsive** adaptée aux mobiles.
 
-🔍 Recherche & filtres : par nom, catégorie ou type de repas (petit-déjeuner, déjeuner, végétarien, etc.).
+---
 
-🧭 Navigation intuitive :
+## 🛠️ Technologies utilisées
+- **Langage** : Dart  
+- **Framework** : Flutter  
+- **IDE conseillés** : Android Studio, VS Code  
+- **Gestion d’état** : Provider (ou `setState` pour débuter)  
+- **Assets** : images locales (`assets/`) + images réseau  
 
-Tabs (onglets)
+---
 
-Drawer (menu latéral)
+## 📂 Structure du projet
 
-Bottom navigation bar (optionnel)
-
-📱 UI responsive : interface adaptée aux mobiles.
-
-🛠️ Technologies utilisées
-
-Langage : Dart
-
-Framework : Flutter
-
-IDE conseillé : Android Studio ou VS Code
-
-Gestion d’état : Provider (ou setState pour débuter)
-
-Gestion des assets : images locales (dans assets/) + images réseau
-
-📂 Structure du projet (proposée)
 lib/
-│── main.dart                # Point d'entrée
+│── main.dart # Point d'entrée
 │
-├── models/                  # Modèles de données
-│   └── recipe.dart
+├── models/ # Modèles de données
+│ └── recipe.dart
 │
-├── pages/                   # Écrans principaux
-│   ├── home_page.dart
-│   ├── recipe_detail_page.dart
-│   └── favorites_page.dart
+├── pages/ # Écrans principaux
+│ ├── home_page.dart
+│ ├── recipe_detail_page.dart
+│ └── favorites_page.dart
 │
-└── widgets/                 # Widgets réutilisables
-    └── recipe_card.dart
+└── widgets/ # Widgets réutilisables
+└── recipe_card.dart
 
 
-📚 Objectifs pédagogiques (pour étudiants)
+---
 
-Manipuler des listes et données complexes (recettes, ingrédients, étapes).
+## 🚀 Améliorations futures
+- 🔔 Notifications push (nouvelle recette du jour).  
+- 🌐 Synchronisation avec une base de données (Firebase, Supabase).  
+- 👤 Gestion des utilisateurs (connexion/inscription).  
+- 📤 Partage de recettes entre utilisateurs.  
 
-Créer une navigation multi-pages avec onglets et menus latéraux.
+---
 
-Construire une interface claire et responsive (texte, images, boutons).
-
-Mettre en œuvre une gestion d’état pour gérer les favoris.
-
-🚀 Améliorations futures
-
-🔔 Notifications push (nouvelle recette du jour).
-
-🌐 Synchronisation avec une base de données (Firebase, Supabase).
-
-👤 Gestion d’utilisateurs (connexion/inscription).
-
-📤 Partage de recettes entre utilisateurs.
+## ▶️ Installation & Exécution
+1. **Cloner le projet**  
+   ```bash
+   git clone https://github.com/ton-compte/app-recettes.git
+   cd app-recettes
